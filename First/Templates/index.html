@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static 'CSS\Style.css' %}">
+    <title>Car </title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+    // document.addEventListener('keydown', (event) => {
+    //     $("Key").post("send/", event.keyCode ).done(function () {
+    //         console.log("message: " + event.keyCode);
+    //     });
+    // });
+
+    document.addEventListener('keydown', (event) => {
+        KeyPressed = event.keyCode
+        console.log("message: " + KeyPressed + " "+event.key);
+        $.ajax({
+            type: 'GET',
+            url: 'send/',
+            data: {'tasks[]': KeyPressed},
+        });
+    });
+
+
+
+// $(document).ready(function() {
+//     $("#voteid").bind("keydown", function(e) { //input type=id above   
+//         $.get("send/", e.keyCode).done(function(e) {
+//         console.log("message: " + e.keyCode);  
+//         });    
+//     });
+// }); 
+</script>
+
+
+<!-- <script>
+    document.addEventListener('keydown', (event)=> {
+        //event.preventDefault();
+        $.ajax({
+            type: 'GET',
+            data: {"KeyCode": event.KeyCode},
+            success: function (response) {
+                console.log("Done")
+            }
+        })
+    })
+</script> -->
+
+
+
+<body>
+    <div class="title">WELCOME TO ASTROBOT</div>
+
+    <div class="videoScreen">
+        <img class="Video" src="http://169.254.120.58:8080/?action=stream">
+        
+        <div class="controlBar">
+            <div class="status">CONNECTED!</div>
+
+            <div id="toggle">
+                <i class="indicator"></i>
+            </div>
+
+            <button disabled class="snap">Take a Snapshot</button>
+        </div>
+    </div>
+
+    <div class="keyboard_wrapp">
+        <div class="motionCtrl">
+            <div class="ctrlTitle">Motion Control</div>
+            <div class="motionKeys">
+                <div class="column">
+                    <div class="keys" id="motionLeft">A</div>
+                </div>
+                <div class="column">
+                    <div class="keys" id="motionFor">W</div>
+                    <div class="keys" id="motionBack">S</div>
+                </div>
+                <div class="column">
+                    <div class="keys" id="motionRight">D</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="camCtrl">
+            <div class="ctrlTitle">Camera Control</div>
+            <div class="camKeys">
+                <div class="column">
+                    <div class="keys" id="camLeft">H</div>
+                </div>
+                <div class="column">
+                    <div class="keys" id="camUp">U</div>
+                    <div class="keys" id="camDown">J</div>
+                </div>
+                <div class="column">
+                    <div class="keys" id="camRight">K</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="{%  static 'JS\Script.js' %}"></script>
+</body>
+
+</html>
