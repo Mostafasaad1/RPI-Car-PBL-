@@ -3,6 +3,7 @@ This project Build for The PBL Project ( A Wifi Car based on Rpi Controlled by a
 
 Supervised By Prof.Victor https://www.researchgate.net/profile/Victor-Parque 
 
+Special Thank to [@Abdelrahman.abdelgawad](https://github.com/AbdelrahmanAbdelgwad/AbdelrahmanAbdelgwad) for his contribution to this project 
 
 Based on 
 ---------
@@ -63,6 +64,3 @@ Building & Installation
 ```
 
 Enjoy 
-Special Thank to [@Abdelrahman.abdelgawad](https://github.com/AbdelrahmanAbdelgwad/AbdelrahmanAbdelgwad) for his contribution to this project 
-
-
