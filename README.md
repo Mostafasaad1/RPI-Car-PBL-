@@ -60,6 +60,6 @@ Building & Installation
 ```
 
 Enjoy 
-Special Thank to @Abdelrahman.abdelgawad@ejust.edu.eg for his contribution to this project 
+Special Thank to [@Abdelrahman.abdelgawad@ejust.edu.eg](https://github.com/AbdelrahmanAbdelgwad/AbdelrahmanAbdelgwad) for his contribution to this project 
 
 
