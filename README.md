@@ -39,7 +39,7 @@ Building & Installation
 
 5) Make sure to activate the usb Camera 
 ```bash 
-  raspi-cofig --> interface --> Legacy camera --> Finish --> reboot 
+  raspi-cofig --> interface --> yes --> Legacy camera --> Finish --> reboot 
 ```
 
 6) Clone the repo ( Better to install it in the home dir ) 
