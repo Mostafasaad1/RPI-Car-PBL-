@@ -48,7 +48,7 @@ Building & Installation
 
 6) Clone the repo ( Better to install it in the home dir ) 
 ```bash 
-    cd /
+    cd 
     git clone https://github.com/Mostafasaad1/RPI-Car-PBL-
 ```
 
